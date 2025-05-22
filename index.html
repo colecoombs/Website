@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cole Coombs Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/src/styles/main.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>Cole Coombs</h1>
+    <p>Systems Intern | Software Engineer | Full-Stack Developer</p>
+    <p class="contact-links">
+  <a href="mailto:Colecoombs34@gmail.com">Colecoombs34@gmail.com</a> |
+  <a href="https://www.linkedin.com/in/cole-coombs-27aa0617a" target="_blank">LinkedIn</a> |
+  <a href="https://github.com/colecoombs" target="_blank">GitHub</a>
+    </p>
+    <a href="/src/assets/Cole Coombs Resumev2.pdf" class="btn btn-resume mt-3">Download Resume</a>
+  </header>
+
+  <main class="container mt-5">
+    <section>
+      <h2 class="mb-4">Projects</h2>
+
+      <div class="project">
+        <h4>📱 Drury Mirror App</h4>
+        <p>A mobile and web publishing platform for student articles. Took over development mid-cycle, implemented UI/UX improvements, and prepared for testing. Built with React Native, Node.js, and MySQL.</p>
+        <a href="#" class="btn btn-sm btn-secondary disabled" tabindex="-1" aria-disabled="true">
+          GitHub (Unavailable due to ongoing project at University)
+        </a>
+
+      </div>
+
+      <div class="project">
+        <h4>🃏 <a href="https://github.com/colecoombs/uno-simulation" target="_blank" class="project-link">Uno Simulation</a></h4>
+        <p>A Java-based simulation of the UNO card game, designed with modular classes for game logic, players, and card mechanics. Features rule-based turn handling, card effect execution, and support for multiple automated player strategies.
+           Ideal for exploring object-oriented programming and AI decision-making in games.</p>
+        <a href="https://github.com/colecoombs/uno-simulation" class="btn btn-sm btn-primary">View on GitHub</a>
+      </div>
+
+      <div class="project">
+        <h4>📲 <a href="https://github.com/colecoombs/appdevII-semesterProject" target="_blank" class="project-link">Mobile Weather App</a></h4>
+        <p>Android app using React Native to show weather for a given zip code. Includes token-based login and backend MySQL connection with basic encryption.</p>
+        <a href="https://github.com/colecoombs/appdevII-semesterProject" class="btn btn-sm btn-primary">View on GitHub</a>
+      </div>
+
+      <div class="project">
+        <h4>🌎 Live Weather App</h4>
+        <p>This embedded project uses the browser's geolocation to get the user's current weather and allows zip code fallback input. Built with vanilla JavaScript and OpenWeatherMap API.</p>
+        <div id="weather-widget" class="p-4 rounded shadow bg-light text-dark">
+          <p id="location-status">Fetching location...</p>
+          <p><strong>City:</strong> <span id="city">-</span></p>
+          <p><strong>Temperature:</strong> <span id="temp">-</span>°F</p>
+          <p><strong>Condition:</strong> <span id="desc">-</span></p>
+          <div class="input-group mt-3">
+            <input type="text" class="form-control" id="zipInput" placeholder="Enter ZIP code">
+            <button class="btn btn-primary" onclick="getWeatherByZip()">Submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-5">
+      <h2>About Me</h2>
+      <p>I’m a detail-oriented Systems Intern and Software Engineering graduate with hands-on experience in cybersecurity, system administration, and full-stack development. I’m passionate about building user-centered applications and learning new technologies.</p>
+    </section>
+
+    <section class="mt-5">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> Python, Java, JavaScript, HTML, CSS</li>
+        <li><strong>Frameworks:</strong> React, React Native, Node.js, Bootstrap</li>
+        <li><strong>Databases:</strong> MongoDB, MySQL</li>
+        <li><strong>Tools:</strong> GitHub, SharePoint, Postman</li>
+        <li><strong>Concepts:</strong> Cybersecurity Fundamentals, Scrum, Agile Methodology</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Cole Coombs. All rights reserved.</p>
+  </footer>
+
+  <script type="module" src="/src/scripts/main.js"></script>
+</body>
+</html>
