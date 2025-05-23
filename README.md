@@ -2,7 +2,8 @@
 
 This repository contains the **original version** of my personal developer portfolio, built using **vanilla JavaScript**, HTML5, and CSS3. It features several projects I've developed as a student and intern in software engineering and full-stack development.
 
-> ⚠️ **Note:** This is a legacy version hosted via **GitHub Pages**.  
+> ⚠️ **Note:** This is a legacy version hosted via **GitHub Pages**.
+> This version is no longer actively maintained. It remains available here for continuity, as some job applications reference this URL.
 > The **updated version with improved build tools and security enhancements** (including API key protection) is now deployed via [Netlify](https://coles-portfolio1516.netlify.app/).
 
 ---
