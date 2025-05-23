@@ -13,7 +13,7 @@
 
 
 // ---- SCROLL ANIMATIONS ---- //
-ScrollReveal().reveal('#hero', {
+ScrollReveal().reveal('body', {
   duration: 1000,
   origin: 'top',
   distance: '50px'
