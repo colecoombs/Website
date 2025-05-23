@@ -37,7 +37,7 @@ function displayWeather(data) {
 }
 
 // Fetches weather using ZIP code as fallback
-function fetchWeatherByZip(zip) {
+/* function fetchWeatherByZip(zip) {
   document.getElementById("location-status").textContent = `Looking up weather for ${zip}...`;
   fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${zip},US&units=imperial&appid=${API_KEY}`)
     .then(response => {
@@ -51,10 +51,10 @@ function fetchWeatherByZip(zip) {
     .catch(() => {
       document.getElementById("location-status").textContent = "ZIP code not found.";
     });
-}
+} */
 
 // Fetches weather using coordinates from geolocation
-function fetchWeatherByCoords(lat, lon) {
+/* function fetchWeatherByCoords(lat, lon) {
   document.getElementById("location-status").textContent = "Getting weather by location...";
   fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${API_KEY}`)
     .then(response => response.json())
@@ -65,20 +65,20 @@ function fetchWeatherByCoords(lat, lon) {
     .catch(() => {
       document.getElementById("location-status").textContent = "Could not fetch weather for location.";
     });
-}
+} */
 
 // Called by button or Enter key: fetches based on input ZIP
-function getWeatherByZip() {
+/* function getWeatherByZip() {
   const zip = document.getElementById("zipInput").value;
   if (zip.length === 5 && /^\d+$/.test(zip)) {
     fetchWeatherByZip(zip);
   } else {
     document.getElementById("location-status").textContent = "Please enter a valid 5-digit ZIP code.";
   }
-}
+} */
 
 // Triggers location fetch on page load
-window.addEventListener("DOMContentLoaded", () => {
+/* window.addEventListener("DOMContentLoaded", () => {
   if ("geolocation" in navigator) {
     navigator.geolocation.getCurrentPosition(
       position => {
@@ -92,7 +92,7 @@ window.addEventListener("DOMContentLoaded", () => {
   } else {
     document.getElementById("location-status").textContent = "Geolocation not supported. Enter ZIP code.";
   }
-});
+}); */
 
 // Allows ZIP code form submission with Enter key
 document.getElementById("zipInput").addEventListener("keyup", function (event) {
