@@ -13,7 +13,6 @@
 
 
 // ---- SCROLL ANIMATIONS ---- //
-import ScrollReveal from 'scrollreveal';
 console.log(import.meta.env.VITE_WEATHER_API_KEY);
 
 ScrollReveal().reveal('#hero', {
@@ -30,9 +29,9 @@ ScrollReveal().reveal('#summary, #education, #certs, #experience, #skills, #proj
 });
 
 
-// ---- WEATHER APP FUNCTIONALITY ---- //
-const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
+
 // Updates the weather display with API data
+// Removed API calls to avoid exposing the API key
 function displayWeather(data) {
   document.getElementById("city").textContent = data.name;
   document.getElementById("temp").textContent = Math.round(data.main.temp);
