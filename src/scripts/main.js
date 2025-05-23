@@ -13,8 +13,6 @@
 
 
 // ---- SCROLL ANIMATIONS ---- //
-console.log(import.meta.env.VITE_WEATHER_API_KEY);
-
 ScrollReveal().reveal('#hero', {
   duration: 1000,
   origin: 'top',
