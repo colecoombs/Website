@@ -16,7 +16,6 @@ This repository contains the modernized version of my professional portfolio, fe
 
 - Professional layout with **Bootstrap**
 - Fully responsive design
-- Scroll animations with **ScrollReveal.js**
 - Weather widget with fallback ZIP entry (API keys secured)
 - Resume PDF download link
 - Detailed descriptions and links for all projects
