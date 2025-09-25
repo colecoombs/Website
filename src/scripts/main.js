@@ -79,23 +79,6 @@ function getWeatherByZip() {
   }
 }
 
-// Triggers location fetch on page load
-window.addEventListener("DOMContentLoaded", () => {
-  if ("geolocation" in navigator) {
-    navigator.geolocation.getCurrentPosition(
-      position => {
-        const { latitude, longitude } = position.coords;
-        fetchWeatherByCoords(latitude, longitude);
-      },
-      () => {
-        document.getElementById("location-status").textContent = "Location access denied. Enter ZIP code.";
-      }
-    );
-  } else {
-    document.getElementById("location-status").textContent = "Geolocation not supported. Enter ZIP code.";
-  }
-});
-
 // Allows ZIP code form submission with Enter key
 document.getElementById("zipInput").addEventListener("keyup", function (event) {
   if (event.key === "Enter") {
