@@ -84,7 +84,14 @@ ul li {
 }
 
 .skills ul{
-  padding-top: 10rem;
+  padding-top: 0.5rem;
+}
+
+/* Tighter spacing for skill headings */
+.skills h5 {
+  margin-top: 0.6rem;
+  margin-bottom: 0.25rem;
+  font-weight: 700;
 }
 
 h5 + ul {
