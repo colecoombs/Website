@@ -38,9 +38,15 @@ function displayWeather(data) {
   document.getElementById("desc").textContent = data.weather[0].description;
 }
 
+// Safe status updater (no-op if element missing)
+function setStatus(text) {
+  const el = document.getElementById("location-status");
+  if (el) el.textContent = text;
+}
+
 // Fetches weather using ZIP code as fallback
 function fetchWeatherByZip(zip) {
-  document.getElementById("location-status").textContent = `Looking up weather for ${zip}...`;
+  setStatus(`Looking up weather for ${zip}...`);
   fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${zip},US&units=imperial&appid=${API_KEY}`)
     .then(response => {
       if (!response.ok) throw new Error("Invalid ZIP");
@@ -48,24 +54,24 @@ function fetchWeatherByZip(zip) {
     })
     .then(data => {
       displayWeather(data);
-      document.getElementById("location-status").textContent = "Location loaded via ZIP";
+      setStatus("Location loaded via ZIP");
     })
     .catch(() => {
-      document.getElementById("location-status").textContent = "ZIP code not found.";
+      setStatus("ZIP code not found.");
     });
 }
 
 // Fetches weather using coordinates from geolocation
 function fetchWeatherByCoords(lat, lon) {
-  document.getElementById("location-status").textContent = "Getting weather by location...";
+  setStatus("Getting weather by location...");
   fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${API_KEY}`)
     .then(response => response.json())
     .then(data => {
       displayWeather(data);
-      document.getElementById("location-status").textContent = "Location loaded via browser";
+      setStatus("Location loaded via browser");
     })
     .catch(() => {
-      document.getElementById("location-status").textContent = "Could not fetch weather for location.";
+      setStatus("Could not fetch weather for location.");
     });
 }
 
@@ -75,13 +81,14 @@ function getWeatherByZip() {
   if (zip.length === 5 && /^\d+$/.test(zip)) {
     fetchWeatherByZip(zip);
   } else {
-    document.getElementById("location-status").textContent = "Please enter a valid 5-digit ZIP code.";
+    setStatus("Please enter a valid 5-digit ZIP code.");
   }
 }
 
 // Allows ZIP code form submission with Enter key
-document.getElementById("zipInput").addEventListener("keyup", function (event) {
-  if (event.key === "Enter") {
-    getWeatherByZip();
-  }
-});
+const zipEl = document.getElementById("zipInput");
+if (zipEl) {
+  zipEl.addEventListener("keyup", function (event) {
+    if (event.key === "Enter") getWeatherByZip();
+  });
+}

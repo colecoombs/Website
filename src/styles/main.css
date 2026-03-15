@@ -146,6 +146,13 @@ h5 + ul {
   font-size: 0.85rem;
 }
 
+/* Space buttons inside CTA groups so they're not tight */
+.project-ctas {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
 /* Skills grid */
 .skills-grid {
   display: grid;
@@ -193,9 +200,12 @@ h5 + ul {
   border: 1px solid rgba(255,255,255,0.03);
 }
 .widget-dark input.form-control {
-  background: rgba(255,255,255,0.02);
+  background: rgba(255,255,255,0.08);
   color: #fff;
-  border: 1px solid rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.12);
+}
+.widget-dark input.form-control::placeholder {
+  color: rgba(255,255,255,0.7);
 }
 .widget-dark .btn {
   color: #fff;
