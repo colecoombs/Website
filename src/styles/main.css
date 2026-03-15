@@ -6,7 +6,8 @@ body {
 }
 
 .project {
-  margin-bottom: 1rem;;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
 }
 
 .project:hover {
@@ -120,7 +121,7 @@ h5 + ul {
 }
 .case-img{
   width: 100%;
-  max-width: 900px;
+  max-width: 700px;
   height: auto;
   display: block;
   border-radius: 6px;
@@ -129,7 +130,7 @@ h5 + ul {
 
 /* Compact project card */
 .project-compact {
-  padding: 0.6rem 0.75rem;
+  padding: 0.75rem 0.9rem;
   background: rgba(255,255,255,0.01);
   border-radius: 6px;
 }
@@ -158,4 +159,17 @@ h5 + ul {
 }
 .skills .tech .tag {
   margin-bottom: 0.35rem;
+}
+
+/* Projects grid: single column on mobile, two columns on tablet+ */
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
