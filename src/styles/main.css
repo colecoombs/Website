@@ -177,7 +177,10 @@ h5 + ul {
 /* Make the featured case study span full width of the projects grid */
 .projects-grid .case-study {
   grid-column: 1 / -1;
-  max-width: 900px;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0; /* align with other grid items */
   padding: 1rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  background: rgba(255,255,255,0.02);
+  border-radius: 8px;
 }
