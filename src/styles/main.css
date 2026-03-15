@@ -173,3 +173,11 @@ h5 + ul {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* Make the featured case study span full width of the projects grid */
+.projects-grid .case-study {
+  grid-column: 1 / -1;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
