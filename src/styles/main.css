@@ -82,3 +82,26 @@ ul li {
   color: #138496;
   text-decoration: underline;
 }
+
+.skills ul{
+  padding-top: 10rem;
+}
+
+h5 + ul {
+  margin-top: 0.6rem;
+}
+
+/* Inline tech tag styles */
+.tech { 
+  margin-bottom: 0.75rem;
+}
+.tag {
+  display: inline-block;
+  background: rgba(255,255,255,0.06);
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.18rem 0.6rem;
+  margin-right: 0.45rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+}
