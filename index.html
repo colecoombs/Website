@@ -98,12 +98,16 @@
       </div>
 
       <div class="project">
-        <div class="project-compact">
-          <h4>🌎 Live Weather App</h4>
-          <p class="muted">Browser app using geolocation and OpenWeatherMap API with ZIP fallback.</p>
-          <p class="tech"><span class="tag">JavaScript</span><span class="tag">OpenWeatherMap</span></p>
-          <div class="project-ctas">
-            <a href="https://github.com/colecoombs/appdevII-semesterProject" class="btn btn-sm btn-primary">GitHub</a>
+        <h4>🌎 Live Weather App</h4>
+        <p>This embedded project uses the browser's geolocation to get the user's current weather and allows zip code fallback input. Built with vanilla JavaScript and OpenWeatherMap API.</p>
+        <div id="weather-widget" class="p-4 rounded shadow bg-light text-dark">
+          <p id="location-status">Fetching location...</p>
+          <p><strong>City:</strong> <span id="city">-</span></p>
+          <p><strong>Temperature:</strong> <span id="temp">-</span>°F</p>
+          <p><strong>Condition:</strong> <span id="desc">-</span></p>
+          <div class="input-group mt-3">
+            <input type="text" class="form-control" id="zipInput" placeholder="Enter ZIP code">
+            <button class="btn btn-primary" onclick="getWeatherByZip()">Submit</button>
           </div>
         </div>
       </div>
