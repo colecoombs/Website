@@ -37,16 +37,7 @@
       </p>
     </section>
 
-      <!-- Case study for flagship project -->
-      <div class="case-study project mt-4 p-3" aria-labelledby="case-study-title">
-        <h4 id="case-study-title">Case Study — Full-Stack Web App for Church</h4>
-        <img src="/church.png" alt="Project screenshot placeholder" class="case-img">
-        <p><strong>Problem:</strong> The church needed an admin-friendly site to manage content and media without manual deployments.</p>
-        <p><strong>Approach:</strong> Built a Node.js + Express backend with PostgreSQL, paired with a responsive frontend. Used Netlify functions for serverless endpoints and JWT authentication for admin access.</p>
-        <p><strong>Result:</strong> Delivered a maintainable admin interface, secure login, and automated deployments — reduced manual update time and simplified content management.</p>
-        <a href="https://github.com/colecoombs/church_project" class="btn btn-sm btn-primary">View Case Repo</a>
-        <a href="https://coles-project.netlify.app/" class="btn btn-sm btn-outline-light ms-2" target="_blank" rel="noopener noreferrer">Live Demo</a>
-      </div>
+      <!-- case study moved into projects grid below to align with project list -->
 
   <main class="container mt-5">
     <section>
@@ -61,10 +52,12 @@
     <section>
       <h2 class="mb-4">Projects</h2>
       <div class="projects-grid">
-      <div>
-        <h4>⛪<a href="https://coles-project.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">Full-Stack Web App for Church</a></h4>
-        <p>Developed a full-stack web application allowing administrators to manage website content and media.</p>
-        <h5>Tech Stack:</h5>
+      <div class="case-study project mt-4 p-3" aria-labelledby="case-study-title">
+        <h4 id="case-study-title">Case Study — Full-Stack Web App for Church</h4>
+        <img src="/church.png" alt="Screenshot of the church web app showing homepage hero and embedded media" class="case-img">
+        <p><strong>Problem:</strong> The church needed an admin-friendly site to manage content and media without manual deployments.</p>
+        <p><strong>Approach:</strong> Built a Node.js + Express backend with PostgreSQL, paired with a responsive frontend. Used Netlify functions for serverless endpoints and JWT authentication for admin access.</p>
+        <p><strong>Result:</strong> Delivered a maintainable admin interface, secure login, and automated deployments — reduced manual update time and simplified content management.</p>
         <p class="tech">
           <span class="tag">JavaScript</span>
           <span class="tag">Node.js</span>
@@ -72,14 +65,10 @@
           <span class="tag">PostgreSQL</span>
           <span class="tag">Netlify functions</span>
         </p>
-        <ul>
-          <li>Built RESTful backend APIs using Node.js and Express with PostgreSQL database</li>
-          <li>Implemented secure authentication with JWT and bcrypt hashing for admin access control</li>
-          <li>Deployed using Netlify serverless functions and Neon PostgreSQL cloud database</li>
-          <li>Designed responsive UI for desktop and mobile users</li>
-        </ul>
-        <a href="https://github.com/colecoombs/church_project" class="btn btn-md btn-primary">View on GitHub</a>
-        <a href="https://coles-project.netlify.app/" class="btn btn-md btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+        <div class="project-ctas mt-2">
+          <a href="https://github.com/colecoombs/church_project" class="btn btn-sm btn-primary">View Case Repo</a>
+          <a href="https://coles-project.netlify.app/" class="btn btn-sm btn-outline-light ms-2" target="_blank" rel="noopener noreferrer">Live Demo</a>
+        </div>
       </div>
 
       <div class="project">
