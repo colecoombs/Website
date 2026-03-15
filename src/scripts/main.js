@@ -92,3 +92,12 @@ if (zipEl) {
     if (event.key === "Enter") getWeatherByZip();
   });
 }
+
+// Attach click listener to Submit button (module scope), and expose function for compatibility
+const zipBtn = document.getElementById("zipSubmit");
+if (zipBtn) {
+  zipBtn.addEventListener('click', getWeatherByZip);
+}
+
+// Optional: expose to window for inline handlers or debugging
+if (typeof window !== 'undefined') window.getWeatherByZip = getWeatherByZip;
