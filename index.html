@@ -9,6 +9,11 @@
   <meta property="og:title" content="Cole Coombs — Portfolio">
   <meta property="og:description" content="Junior Full-Stack Developer. See projects, code, and resume.">
   <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/favicon.svg">
+  <meta property="og:image" content="/og-image.svg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/src/styles/main.css" />
 </head>
@@ -56,6 +61,17 @@
         </ul>
         <a href="https://github.com/colecoombs/church_project" class="btn btn-md btn-primary">View on GitHub</a>
         <a href="https://coles-project.netlify.app/" class="btn btn-md btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+      </div>
+
+      <!-- Case study for flagship project -->
+      <div class="case-study project mt-4 p-3" aria-labelledby="case-study-title">
+        <h4 id="case-study-title">Case Study — Full-Stack Web App for Church</h4>
+        <img src="/og-image.svg" alt="Project screenshot placeholder" class="case-img">
+        <p><strong>Problem:</strong> The church needed an admin-friendly site to manage content and media without manual deployments.</p>
+        <p><strong>Approach:</strong> Built a Node.js + Express backend with PostgreSQL, paired with a responsive frontend. Used Netlify functions for serverless endpoints and JWT authentication for admin access.</p>
+        <p><strong>Result:</strong> Delivered a maintainable admin interface, secure login, and automated deployments — reduced manual update time and simplified content management.</p>
+        <a href="https://github.com/colecoombs/church_project" class="btn btn-sm btn-primary">View Case Repo</a>
+        <a href="https://coles-project.netlify.app/" class="btn btn-sm btn-outline-light ms-2" target="_blank" rel="noopener noreferrer">Live Demo</a>
       </div>
 
       <div class="project">

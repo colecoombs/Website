@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#203a43"/>
+      <stop offset="1" stop-color="#2c5364"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <text x="60" y="120" fill="#ffffff" font-family="Segoe UI, Tahoma, sans-serif" font-size="48" font-weight="700">Cole Coombs — Portfolio</text>
+  <text x="60" y="200" fill="#d1eef3" font-family="Segoe UI, Tahoma, sans-serif" font-size="28">Junior Full-Stack Developer — Projects: JavaScript, React, Node.js, PostgreSQL</text>
+  <rect x="60" y="260" width="1080" height="320" fill="rgba(255,255,255,0.05)" rx="8"/>
+  <text x="80" y="320" fill="#ffffff" font-family="Segoe UI, Tahoma, sans-serif" font-size="24">Screenshot placeholder — replace with real project image</text>
+</svg>

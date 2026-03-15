@@ -112,3 +112,17 @@ h5 + ul {
   margin-bottom: 0.25rem;
   font-size: 0.9rem;
 }
+
+/* Case study image and box */
+.case-study {
+  background: rgba(255,255,255,0.02);
+  border-radius: 8px;
+}
+.case-img{
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+}
