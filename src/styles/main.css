@@ -126,3 +126,36 @@ h5 + ul {
   border-radius: 6px;
   margin-bottom: 0.75rem;
 }
+
+/* Compact project card */
+.project-compact {
+  padding: 0.6rem 0.75rem;
+  background: rgba(255,255,255,0.01);
+  border-radius: 6px;
+}
+.project-compact h4 {
+  margin-bottom: 0.25rem;
+}
+.project-compact .muted {
+  color: rgba(255,255,255,0.75);
+  margin-bottom: 0.4rem;
+}
+.project-ctas .btn {
+  padding: 0.35rem 0.6rem;
+  font-size: 0.85rem;
+}
+
+/* Skills grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem 1.5rem;
+  margin-top: 0.75rem;
+}
+.skill-col h5 {
+  margin-bottom: 0.35rem;
+  font-size: 1rem;
+}
+.skills .tech .tag {
+  margin-bottom: 0.35rem;
+}

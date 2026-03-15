@@ -75,43 +75,35 @@
       </div>
 
       <div class="project">
-        <h4>✂️<a href="https://github.com/colecoombs/salon-web-app" target="_blank" rel="noopener noreferrer" class="project-link">Salon Web App</a></h4>
-        <p>A full-stack web application built for a salon business. Features include a homepage with a portfolio gallery, a contact form, and an appointment scheduler with secure admin login (JWT).</p>
-        <h5>Tech Stack:</h5>
-        <p class="tech">
-          <span class="tag">React</span>
-          <span class="tag">JavaScript</span>
-          <span class="tag">CSS3</span>
-          <span class="tag">Node.js</span>
-          <span class="tag">PostgreSQL</span>
-          <span class="tag">Twilio API</span>
-        </p>
-        <ul>
-          <li> Implements client-server separation for security</li>
-          <li>Utilizes backend API calls to retrieve user appointment data, show openings, and request appointments</li>
-          <li>Integrated Twilio API to send automated SMS appointment confirmations and reminders</li>
-        </ul>
-        <a href="https://github.com/colecoombs/salon-web-app" class="btn btn-md btn-primary">View on GitHub</a>
-        <a href="https://hairwaytoheaven.org/" class="btn btn-md btn-primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+        <div class="project-compact">
+          <h4>✂️ <a href="https://github.com/colecoombs/salon-web-app" target="_blank" rel="noopener noreferrer" class="project-link">Salon Web App</a></h4>
+          <p class="muted">Full-stack salon site with appointment scheduling and admin login.</p>
+          <p class="tech"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">PostgreSQL</span><span class="tag">Twilio</span></p>
+          <div class="project-ctas">
+            <a href="https://github.com/colecoombs/salon-web-app" class="btn btn-sm btn-primary">GitHub</a>
+            <a href="https://hairwaytoheaven.org/" class="btn btn-sm btn-primary ms-2" target="_blank" rel="noopener noreferrer">Live</a>
+          </div>
+        </div>
       </div>
 
       <div class="project">
-        <h4>📲 <a href="https://github.com/colecoombs/appdevII-semesterProject" target="_blank" rel="noopener noreferrer" class="project-link">Mobile Weather App</a></h4>
-        <p>Android app using React Native to show weather for a given zip code. Includes token-based login and backend MySQL connection with basic encryption.</p>
-        <a href="https://github.com/colecoombs/appdevII-semesterProject" class="btn btn-md btn-primary">View on GitHub</a>
+        <div class="project-compact">
+          <h4>📲 <a href="https://github.com/colecoombs/appdevII-semesterProject" target="_blank" rel="noopener noreferrer" class="project-link">Mobile Weather App</a></h4>
+          <p class="muted">React Native Android app with token-based auth and backend MySQL integration.</p>
+          <p class="tech"><span class="tag">React Native</span><span class="tag">MySQL</span><span class="tag">Auth</span></p>
+          <div class="project-ctas">
+            <a href="https://github.com/colecoombs/appdevII-semesterProject" class="btn btn-sm btn-primary">GitHub</a>
+          </div>
+        </div>
       </div>
 
       <div class="project">
-        <h4>🌎 Live Weather App</h4>
-        <p>This embedded project uses the browser's geolocation to get the user's current weather and allows zip code fallback input. Built with vanilla JavaScript and OpenWeatherMap API.</p>
-        <div id="weather-widget" class="p-4 rounded shadow bg-light text-dark">
-          <p id="location-status">Fetching location...</p>
-          <p><strong>City:</strong> <span id="city">-</span></p>
-          <p><strong>Temperature:</strong> <span id="temp">-</span>°F</p>
-          <p><strong>Condition:</strong> <span id="desc">-</span></p>
-          <div class="input-group mt-3">
-            <input type="text" class="form-control" id="zipInput" placeholder="Enter ZIP code">
-            <button class="btn btn-primary" onclick="getWeatherByZip()">Submit</button>
+        <div class="project-compact">
+          <h4>🌎 Live Weather App</h4>
+          <p class="muted">Browser app using geolocation and OpenWeatherMap API with ZIP fallback.</p>
+          <p class="tech"><span class="tag">JavaScript</span><span class="tag">OpenWeatherMap</span></p>
+          <div class="project-ctas">
+            <a href="https://github.com/colecoombs/appdevII-semesterProject" class="btn btn-sm btn-primary">GitHub</a>
           </div>
         </div>
       </div>
@@ -127,30 +119,59 @@
 
     <section class="skills">
       <h2>Skills</h2>
-      <h5>Languages:</h5>
-      <ul>
-        <li>Python, Java, JavaScript, HTML5, CSS3</li>
-      </ul>
+      <div class="skills-grid">
+        <div class="skill-col">
+          <h5>Languages</h5>
+          <p class="tech">
+            <span class="tag">Python</span>
+            <span class="tag">Java</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+          </p>
+        </div>
 
-      <h5>Frontend:</h5>
-      <ul>
-        <li>React, React Native, Next.js, Bootstrap</li>
-      </ul>
+        <div class="skill-col">
+          <h5>Frontend</h5>
+          <p class="tech">
+            <span class="tag">React</span>
+            <span class="tag">React Native</span>
+            <span class="tag">Next.js</span>
+            <span class="tag">Bootstrap</span>
+          </p>
+        </div>
 
-      <h5>Backend:</h5>
-      <ul>
-        <li>Node.js, Express.js, REST APIs</li>
-      </ul>
+        <div class="skill-col">
+          <h5>Backend</h5>
+          <p class="tech">
+            <span class="tag">Node.js</span>
+            <span class="tag">Express</span>
+            <span class="tag">REST APIs</span>
+          </p>
+        </div>
 
-      <h5>Databases:</h5>
-      <ul>
-        <li>PostgreSQL, MySQL, MongoDB, Supabase</li>
-      </ul>
+        <div class="skill-col">
+          <h5>Databases</h5>
+          <p class="tech">
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Supabase</span>
+          </p>
+        </div>
 
-      <h5>Tools:</h5>
-      <ul>
-        <li>Git, GitHub, Postman, Vite, npm, VS Code</li>
-      </ul>
+        <div class="skill-col">
+          <h5>Tools</h5>
+          <p class="tech">
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">Postman</span>
+            <span class="tag">Vite</span>
+            <span class="tag">npm</span>
+            <span class="tag">VS Code</span>
+          </p>
+        </div>
+      </div>
     </section>
   </main>
 
